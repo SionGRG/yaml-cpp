@@ -17,17 +17,17 @@ project "yaml-cpp"
 	{
 		"include"
 	}
-
+	
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "off"
+		staticruntime "On"
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "off"
+		staticruntime "On"
 
 	filter "configurations:Debug"
 		runtime "Debug"
